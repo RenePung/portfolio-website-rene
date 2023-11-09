@@ -43,7 +43,7 @@ export default function Header() {
              >
 
             <Link 
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300" 
+            className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition" 
             href={link.hash}
             >
             {link.name}
