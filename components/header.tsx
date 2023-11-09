@@ -1,4 +1,4 @@
-"use client"
+"use client" // client side rendering
 import React from 'react';
 import { motion } from 'framer-motion';
 //--------------- imports --------------------------------------------------------
