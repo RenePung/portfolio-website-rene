@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google' // importing inter google font
 
 const inter = Inter({ subsets: ['latin'] }) // implementing latin font for our project
 
-// title (9) is shown next to favicon on the tab, description (10) in shown in google
+// title (10) is shown next to favicon on the tab, description (11) in shown in google
 export const metadata = {
   title: 'Rene | Personal Portfolio',
   description: 'Rene is an aspiring full stack developer and programmer',

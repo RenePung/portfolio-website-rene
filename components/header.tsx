@@ -1,5 +1,7 @@
 import React from 'react'
+//--------------- imports --------------------------------------------------------
 
+// header - navigation bar
 export default function Header() {
   return (
   <header className="z-[999] relative">
