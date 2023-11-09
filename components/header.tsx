@@ -10,8 +10,7 @@ export default function Header() {
     <motion.div className="
     fixed 
     top-0 
-    left-1/2 
-    -translate-x-1/2 
+    left-1/2  
     h-[4.5rem] 
     w-full 
     rounded-none 
