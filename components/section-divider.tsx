@@ -2,7 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+//-----------------------------imports----------------------------------------
 
+// section divider ( | )
 export default function SectionDivider() {
   return (
     <motion.div
