@@ -53,7 +53,7 @@ export default function Intro() {
             Download CV <HiOutlineArrowDownTray /> 
           </a>
 
-          <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full border border-black" href="https://www.linkedin.com/in/rene-pungartnik-b247b5293/" target="_blank">
+          <a className="bg-white hover:bg-sky-200 hover:text-blue-700 text-blue-600 p-4 flex items-center gap-2 rounded-full border border-black" href="https://www.linkedin.com/in/rene-pungartnik-b247b5293/" target="_blank">
             <BsLinkedin />
           </a>
 
