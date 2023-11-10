@@ -37,13 +37,13 @@ export default function Intro() {
         </div>
 
         {/* Intro Text------------------------------------------------------------ */}
-        <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
         <span className="font-bold">Hello, I'm Rene.</span> I'm An{" "}
         <span className="font-bold">Aspiring Full-Stack Developer & Programmer</span> With{" "}
         <span className="font-bold">1 Year</span> Of Experience. I Enjoy
         Building <span className="italic">Websites & Apps</span>. My Focus Is{" "}
         <span className="underline">Mern Stack</span>.
-        </motion.p>
+        </motion.h1>
 
         {/* Message Me - Blue Button------------------------------------------------------------ */}
         <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, }}>
