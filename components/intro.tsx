@@ -1,11 +1,15 @@
 "use client"
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { FaComment, FaGithub } from 'react-icons/fa';
+import { HiDownload } from 'react-icons/hi';
+import { BsLinkedin } from 'react-icons/bs';
 //---------------------------------------------------imports------------------------------------------------------------
 
 
-
+// intro text and buttons
 export default function Intro() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
@@ -32,13 +36,31 @@ export default function Intro() {
             </div>
         </div>
 
-        <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+        <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
         <span className="font-bold">Hello, I'm Rene.</span> I'm An{" "}
         <span className="font-bold">Aspiring Full-Stack Developer & Programmer</span> With{" "}
         <span className="font-bold">1 Year</span> Of Experience. I Enjoy
         Building <span className="italic">Websites & Apps</span>. My Focus Is{" "}
         <span className="underline">Mern Stack</span>.
-        </p>
+        </motion.p>
+
+        <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+          <Link href="#contact" className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
+            Message Me <FaComment /> 
+          </Link>
+
+          <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full border border-black">
+            Download CV <HiDownload /> 
+          </a>
+
+          <a className="bg-white p-4 flex items-center gap-2 rounded-full border border-black">
+            <BsLinkedin />
+          </a>
+
+          <a className="bg-white p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black">
+            <FaGithub />
+          </a>
+        </motion.div>
     </section>
   )
 }
