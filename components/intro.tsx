@@ -45,19 +45,19 @@ export default function Intro() {
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, }}>
-          <Link href="#contact" className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
+          <Link href="#contact" className="bg-sky-500 hover:bg-sky-700 text-white px-7 py-3 flex items-center gap-2 rounded-full">
             Message Me <FaComment /> 
           </Link>
 
-          <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full border border-black">
+          <a className="bg-white hover:bg-sky-200 px-7 py-3 flex items-center gap-2 rounded-full border border-black" href="/CV.pdf">
             Download CV <HiOutlineArrowDownTray /> 
           </a>
 
-          <a className="bg-white p-4 flex items-center gap-2 rounded-full border border-black">
+          <a className="bg-white hover:bg-sky-200 p-4 flex items-center gap-2 rounded-full border border-black">
             <BsLinkedin />
           </a>
 
-          <a className="bg-white p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black">
+          <a className="bg-white hover:bg-sky-200 p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black">
             <FaGithub />
           </a>
         </motion.div>
