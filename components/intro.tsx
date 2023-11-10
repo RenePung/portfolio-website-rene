@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaComment, FaGithub } from 'react-icons/fa';
-import { HiDownload } from 'react-icons/hi';
+import { HiOutlineArrowDownTray } from 'react-icons/hi2';
 import { BsLinkedin } from 'react-icons/bs';
 //---------------------------------------------------imports------------------------------------------------------------
 
@@ -50,7 +50,7 @@ export default function Intro() {
           </Link>
 
           <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full border border-black">
-            Download CV <HiDownload /> 
+            Download CV <HiOutlineArrowDownTray /> 
           </a>
 
           <a className="bg-white p-4 flex items-center gap-2 rounded-full border border-black">
