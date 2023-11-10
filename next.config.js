@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "images.unsplash.com",
+                hostname: "images.unsplash.com", // change hostname based on web address of your picture
             },
         ],
     },
