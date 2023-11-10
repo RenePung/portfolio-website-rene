@@ -28,6 +28,14 @@ export default function Intro() {
                 </motion.div>
             </div>
         </div>
+
+        <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+        <span className="font-bold">Hello, I'm Rene.</span> I'm An{" "}
+        <span className="font-bold">Aspiring Full-Stack Developer & Programmer</span> With{" "}
+        <span className="font-bold">1 Year</span> Of Experience. I Enjoy
+        Building <span className="italic">Websites & Apps</span>. My Focus Is{" "}
+        <span className="underline">Mern Stack</span>.
+        </p>
     </section>
   )
 }
