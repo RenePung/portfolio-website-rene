@@ -3,9 +3,12 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion';
 //---------------------------------------------------imports------------------------------------------------------------
+
+
+
 export default function Intro() {
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
         <div className="flex items-center justify-center">
             <div className="relative">
               <motion.div
