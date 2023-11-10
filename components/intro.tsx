@@ -49,7 +49,7 @@ export default function Intro() {
             Message Me <FaComment /> 
           </Link>
 
-          <a className="bg-white hover:bg-sky-200 px-7 py-3 flex items-center gap-2 rounded-full border border-black" href="/CV.pdf">
+          <a className="bg-white hover:bg-sky-200 px-7 py-3 flex items-center gap-2 rounded-full border border-black" href="/CV.pdf" download>
             Download CV <HiOutlineArrowDownTray /> 
           </a>
 
