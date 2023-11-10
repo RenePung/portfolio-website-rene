@@ -9,7 +9,7 @@ import { BsLinkedin } from 'react-icons/bs';
 //---------------------------------------------------imports------------------------------------------------------------
 
 
-// intro text and buttons
+// intro text and buttons------------------------------------------------------------
 export default function Intro() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
@@ -36,6 +36,7 @@ export default function Intro() {
             </div>
         </div>
 
+        {/* Intro Text------------------------------------------------------------ */}
         <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
         <span className="font-bold">Hello, I'm Rene.</span> I'm An{" "}
         <span className="font-bold">Aspiring Full-Stack Developer & Programmer</span> With{" "}
@@ -44,19 +45,23 @@ export default function Intro() {
         <span className="underline">Mern Stack</span>.
         </motion.p>
 
+        {/* Message Me - Blue Button------------------------------------------------------------ */}
         <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, }}>
           <Link href="#contact" className="bg-sky-500 hover:bg-sky-700 text-white px-7 py-3 flex items-center gap-2 rounded-full">
             Message Me <FaComment /> 
           </Link>
 
+          {/* Download CV Button------------------------------------------------------------ */}
           <a className="bg-white hover:bg-sky-200 hover:text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full border border-black" href="/CV.pdf" download>
             Download CV <HiOutlineArrowDownTray /> 
           </a>
 
+          {/* Linkedin Button------------------------------------------------------------ */}
           <a className="bg-white hover:bg-sky-200 hover:text-blue-700 text-blue-600 p-4 flex items-center gap-2 rounded-full border border-black" href="https://www.linkedin.com/in/rene-pungartnik-b247b5293/" target="_blank">
             <BsLinkedin />
           </a>
 
+          {/* Github Button------------------------------------------------------------ */}
           <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black" href="https://github.com/RenePung" target="_blank">
             <FaGithub />
           </a>
