@@ -53,11 +53,11 @@ export default function Intro() {
             Download CV <HiOutlineArrowDownTray /> 
           </a>
 
-          <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full border border-black" href="https://www.linkedin.com/in/rene-pungartnik-b247b5293/">
+          <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full border border-black" href="https://www.linkedin.com/in/rene-pungartnik-b247b5293/" target="_blank">
             <BsLinkedin />
           </a>
 
-          <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black" href="https://github.com/RenePung">
+          <a className="bg-white hover:bg-sky-200 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full text-[1.35rem] border border-black" href="https://github.com/RenePung" target="_blank">
             <FaGithub />
           </a>
         </motion.div>
