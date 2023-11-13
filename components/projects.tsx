@@ -47,7 +47,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
     src={imageUrl} 
     alt="Most Recent Project I Worked On" 
     quality={95} 
-    className="absolute top-8 -right-40" />
+    className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl" />
   </section>
   );
 }
