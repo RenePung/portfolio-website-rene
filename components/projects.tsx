@@ -23,23 +23,31 @@ export default function Projects() {
   )
 }
 
-
 // new custom component
 type ProjectProps = (typeof projectsData)[number];
 
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
-  return <section>
+  return (
 
-    <h3>{title}</h3>
+    <section className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative">
 
-    <p>{description}</p>
+    <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10">
+    <h3 className="text-2xl font-semibold">{title}</h3>
 
-    <ul>
+    <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+
+    <ul className="flex flex-wrap mt-4 gap-2">
       {tags.map((tag, index) => (
-        <li key={index}>{tag}</li>
+        <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full" key={index}>{tag}</li>
       ))}
     </ul>
+    </div>
 
-    <Image src={imageUrl} alt="Most Recent Project I Worked On" quality={95} />
+    <Image 
+    src={imageUrl} 
+    alt="Most Recent Project I Worked On" 
+    quality={95} 
+    className="absolute top-8 -right-40" />
   </section>
+  );
 }
