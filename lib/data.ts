@@ -62,17 +62,17 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Travel App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Modern Front-End Travel Website Built with the Latest Technologies and Responsive on All Screen Sizes.",
+    tags: ["React", "Next.js", "JavaScript", "Tailwind", "TypeScript"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Car ShowCase",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Car Rental Website with Realistic Imagery Enhanced by AI through External API Integration and Advanced Filtering.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "API's"],
     imageUrl: rmtdevImg,
   },
   {
