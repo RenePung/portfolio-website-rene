@@ -71,7 +71,7 @@ export const projectsData = [
   {
     title: "Car ShowCase",
     description:
-      "Car Rental Website with Realistic Imagery Enhanced by AI through External API Integration and Advanced Filtering.",
+      "Car Rental Website with Realistic Images Made by AI through External API Integration and Advanced Filtering.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "API's"],
     imageUrl: rmtdevImg,
   },
