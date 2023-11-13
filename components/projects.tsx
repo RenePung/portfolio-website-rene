@@ -29,7 +29,7 @@ type ProjectProps = (typeof projectsData)[number];
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
 
-    <section className="group bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden mb-3 sm:mb-8 sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8">
+    <section className="group bg-gray-100 max-w-[42rem] border border-sky-400 rounded-lg overflow-hidden last:mb-0 mb-3 sm:mb-8 sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8">
 
     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
     
