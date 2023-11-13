@@ -29,7 +29,7 @@ type ProjectProps = (typeof projectsData)[number];
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
 
-    <section className="group bg-gray-100 max-w-[42rem] border border-sky-400 rounded-lg overflow-hidden last:mb-0 mb-3 sm:mb-8 sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8">
+    <section className="group bg-gray-100 max-w-[42rem] border border-sky-400 hover:bg-sky-200 transition rounded-lg overflow-hidden last:mb-0 mb-3 sm:mb-8 sm:pr-8 relative sm:h-[20rem] sm:even:pl-8">
 
     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
     
@@ -48,7 +48,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
     src={imageUrl} 
     alt="Most Recent Project I Worked On" 
     quality={95} 
-    className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40" />
+    className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 transition  group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2" />
   </section>
   );
 }
