@@ -33,10 +33,19 @@ export default function Header() {
             >
 
             <Link 
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-sky-500 transition" 
+            className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-sky-500 transition", {
+              "text-sky-500": activeSection === link.name,
+            })} 
             href={link.hash}
             >
             {link.name}
+
+            {
+              link.name === activeSection && (
+                <span className="bg-gray-100 rounded-full absolute inset-0 -z-10 border"></span>
+              )
+            }
+
             </Link>
             </motion.li>
           ))}
