@@ -1,30 +1,18 @@
 "use client"
 import Image from 'next/image';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaComment, FaGithub } from 'react-icons/fa';
 import { HiOutlineArrowDownTray } from 'react-icons/hi2';
 import { BsLinkedin } from 'react-icons/bs';
-import { useActiveSectionContext } from '@/context/active-section-context';
-import { useInView } from 'react-intersection-observer';
+import { useSectionInView } from '@/lib/hooks';
 //---------------------------------------------------imports------------------------------------------------------------
 
 
 // intro text and buttons------------------------------------------------------------
 export default function Intro() {
-  const {ref, inView} = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection]);
-
-
+  const { ref } = useSectionInView("Home", 0.5);
 
   return (
     <section ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">

@@ -10,7 +10,7 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 
 // hook
 export default function Header() {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
 // header - navigation bar framer motion------------------------------------------------------------------
   return (
@@ -37,7 +37,10 @@ export default function Header() {
               "text-sky-500": activeSection === link.name,
             })} 
             href={link.hash}
-            onClick={() => setActiveSection(link.name)}
+            onClick={() => {
+              setActiveSection(link.name)
+              setTimeOfLastClick(Date.now())
+            }}
             >
             {link.name}
 
