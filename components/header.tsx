@@ -1,16 +1,16 @@
 "use client" // client side rendering
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx'; // tailwind clsx utility for constructing className strings conditionally
+import { useActiveSectionContext } from '@/context/active-section-context';
 //--------------- imports --------------------------------------------------------
 
 
-// active section in a nav bar using useState-------------------------------------------------------------
+// hook
 export default function Header() {
-  const [activeSection, setActiveSection] = useState('Home');
-
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
 // header - navigation bar framer motion------------------------------------------------------------------
   return (
