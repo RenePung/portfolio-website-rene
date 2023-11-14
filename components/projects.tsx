@@ -8,9 +8,12 @@ import Project from './project';
 
 // change data by going to the data.ts file in lib folder and change images by going to the public folder.
 // to change colors / styling go to projects.tsx file in the same folder as you are in.
+
+
+// scroll-mt-28 is for a spacing between navbar and h3 when you navigate trought navbar links!
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28"> 
       <SectionHeading>My Recent Projects</SectionHeading>
       <div>
         {
