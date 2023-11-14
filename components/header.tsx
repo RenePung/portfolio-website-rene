@@ -1,12 +1,19 @@
 "use client" // client side rendering
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
 //--------------- imports --------------------------------------------------------
 
-// header - navigation bar framer motion
+
+
+// active section in a nav bar using useState-------------------------------------------------------------
 export default function Header() {
+  const [activeSection, setActiveSection] = useState('Home');
+
+
+
+// header - navigation bar framer motion------------------------------------------------------------------
   return (
   <header className="z-[999] relative">
     <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-black border-opacity-40 bg-white bg-opacity-70 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
