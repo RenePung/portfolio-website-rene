@@ -9,10 +9,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+//------------------------------imports-----------------------------------------
 
-
+// added visible={true} to verticaltimelineelement because it was NOT showing up on a webpage, animation is not working. issue with the newest version of Next!
 export default function Experience() {
-
   return (
     <section id="experience">
       <SectionHeading>My experience</SectionHeading>
