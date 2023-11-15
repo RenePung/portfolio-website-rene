@@ -37,9 +37,10 @@ export default function Experience() {
               iconStyle={{
                 background: "white",
                 fontSize: "1.5rem",
+                border: "1px solid #38bdf8",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <h3 className="font-semibold capitalize underline decoration-sky-400 hover:decoration-sky-600 decoration-2">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700">
                 {item.description}
