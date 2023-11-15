@@ -6,11 +6,13 @@ import { AiOutlineSend } from "react-icons/ai";
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 import { sendEmail } from "@/actions/sendEmail";
+import { useFormStatus } from 'react-dom';
+import SubmitBtn from './submit-btn';
 //-------------------------------------imports---------------------------------------------------
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact");
-
+    
   return (
     <motion.section
      ref={ref}
@@ -37,18 +39,11 @@ export default function Contact() {
          await sendEmail(formData);
         }}
         >
-
             <input className="h-14 px-4 rounded-lg borderBlack" name="senderEmail" type="email" required maxLength={500} placeholder="Enter your email" />
 
             <textarea className="h-52 my-3 rounded-lg borderBlack p-4" name="message" required maxLength={5000} placeholder="Enter message here" />
-
-            <button 
-            className="group bg-sky-500 hover:bg-sky-700 text-white rounded-full h-[3rem] w-[8rem] outline-none transition-all flex items-center justify-center gap-2 focus:scale-110 hover:scale-110 active:scale-105"
-             type="submit" 
-             >
-                Send <AiOutlineSend className="opacity-90 transition-all group-hover:translate-x-1" />
-            </button>
+            <SubmitBtn />
         </form>
     </motion.section>
-  )
+  );
 }
