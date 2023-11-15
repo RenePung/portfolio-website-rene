@@ -29,10 +29,12 @@ export default function ContactFormEmail({
         <Head />
         <Preview>You have a new message from your portfolio website!</Preview>
         <Tailwind>
-            <Body>
+            <Body className="bg-black text-white">
                 <Container>
-                    <Section>
-                        <Heading>You have received the following message from the contact form</Heading>
+                    <Section className="bg-black text-white border border-sky-400 my-10 px-10 py-4 rounded-md">
+                        <Heading className="leading-tight text-white">
+                            You have received the following message from the contact form:
+                        </Heading>
                         <Text>{message}</Text>
                         <Hr />
                         <Text>The sender's email is: {senderEmail}</Text>
