@@ -32,15 +32,8 @@ export default function Contact() {
         <SectionHeading>Contact Me</SectionHeading>
         <p className="text-gray-700 -mt-6">You can contact me at <a className="underline decoration-sky-300 hover:decoration-emerald-400 decoration-2" href="mailto:rene.pungartnik98@gmail.com">rene.pungartnik98@gmail.com</a> or trough this form!</p>
 
-        <form className="mt-10 flex flex-col" 
-         action={async (formData) => {
-         console.log("Running on client");
-         console.log(formData.get("senderEmail"));
-         console.log(formData.get("message"));
-
-         await sendEmail(formData);
-        }}
-        >
+        <form className="mt-10 flex flex-col" action={sendEmail}>
+         
             <input className="h-14 px-4 rounded-lg borderBlack" name="senderEmail" type="email" required maxLength={500} placeholder="Enter your email" />
 
             <textarea className="h-52 my-3 rounded-lg borderBlack p-4" name="message" required maxLength={500} placeholder="Enter message here" />
