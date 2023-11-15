@@ -13,9 +13,10 @@ import { useSectionInView } from "@/lib/hooks";
 
 // added visible={true} to verticaltimelineelement because it was NOT showing up on a webpage, animation is not working. issue with the newest version of Next!
 export default function Experience() {
+    const { ref } = useSectionInView("Experience");
   return (
-    <section id="experience">
-      <SectionHeading>My experience</SectionHeading>
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+      <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline lineColor=''>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
