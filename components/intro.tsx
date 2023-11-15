@@ -7,12 +7,17 @@ import { FaComment, FaGithub } from 'react-icons/fa';
 import { HiOutlineArrowDownTray } from 'react-icons/hi2';
 import { BsLinkedin } from 'react-icons/bs';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 //---------------------------------------------------imports------------------------------------------------------------
 
 
 // intro text and buttons------------------------------------------------------------
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const {
+    setActiveSection,
+    setTimeOfLastClick,
+  } = useActiveSectionContext();
 
   return (
     <section ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
@@ -50,7 +55,13 @@ export default function Intro() {
 
         {/* Message Me - Blue Button------------------------------------------------------------ */}
         <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, }}>
-          <Link href="#contact" className="bg-sky-500 hover:bg-sky-700 text-white px-7 py-3 flex items-center gap-2 rounded-full">
+
+          <Link href="#contact" className="bg-sky-500 hover:bg-sky-700 text-white px-7 py-3 flex items-center gap-2 rounded-full" 
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+          >
             Message Me <FaComment /> 
           </Link>
 
