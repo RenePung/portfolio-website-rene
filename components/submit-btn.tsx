@@ -1,7 +1,10 @@
 import React from 'react'
 import { useFormStatus } from 'react-dom';
 import { AiOutlineSend } from 'react-icons/ai'
+//----------------------------------imports--------------------------------------------
 
+
+// button Send in contact section - tailwind loader animation
 export default function SubmitBtn() {
     const { pending } = useFormStatus();
   return (

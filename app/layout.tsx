@@ -2,6 +2,7 @@ import Header from '@/components/header';
 import './globals.css';
 import { Inter } from 'next/font/google'; // importing inter google font 
 import ActiveSectionContextProvider from '@/context/active-section-context';
+import { Toaster } from 'react-hot-toast';
 // ---------------------------- imports ------------------------------------
 
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-ROOT OF THIS WEBPAGE-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
         <Header />
         {children}
+        <Toaster position="bottom-center" />
         </ActiveSectionContextProvider>
       </body>
     </html>
