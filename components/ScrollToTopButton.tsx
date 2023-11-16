@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { SlArrowUpCircle } from "react-icons/sl";
+import { FcCollapse } from "react-icons/fc";
 //-------------------------imports--------------------------------------------------------
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -36,7 +37,7 @@ const ScrollToTopButton = () => {
       }`}
       onClick={scrollToTop}
     >
-      <SlArrowUpCircle size={24} />
+      <FcCollapse size={28} className="border border-sky-500 rounded-full p-1" />
     </button>
   )
 }
