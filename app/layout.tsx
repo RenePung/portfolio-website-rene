@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'; // importing inter google font
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/footer';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 // ---------------------------- imports ------------------------------------
 
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-ROOT OF THIS WEBPAGE-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollToTopButton />
         <Toaster position="bottom-center" />
         </ActiveSectionContextProvider>
       </body>
