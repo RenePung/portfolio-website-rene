@@ -20,30 +20,17 @@ export default function About() {
     >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-        </p>
-        <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-        </p>
+    After navigating through the uncertainties of life, I found my calling in the world of web development and programming, thanks to the guidance of my <a href="https://heidipun.com/" target="_blank" className="text-sky-600">sister</a>—an industry veteran. I embarked on a journey of learning, diving into courses, coding bootcamps and doing projects.
+    I started with basics of web development spending time doing websites and debugging silly amateur mistakes. Later i got into Next.js, TypeScript, React, and the exciting world of full-stack development.
+    <span className="italic"> Crafting the finished product, designing, and making things work seamlessly</span> are the facets of programming that fuel my passion. The satisfaction of completing a project is my favorite reward.
+    My toolkit includes React, TypeScript, Next.js and backend technologies as MongoDB, Appwrite and more enabling me to bring ideas to reality.
+    I am on a mission to become a <span className="font-medium">full-time full-stack web-developer</span>, driven by the desire to contribute my skills to projects and embrace the challenges of the tech world.
+</p>
+<p>
+    <span className="italic">Beyond coding, my interests diversify into day trading, exploring new programming libraries, and delving into the realms of psychology.</span><br />
+    <span className="underline font-bold">Thank you for visiting my website</span>
+</p>
+
     </motion.section>
   )
 }
