@@ -66,21 +66,21 @@ export const projectsData = [
   {
     title: "Travel App",
     description:
-      "Modern Front-End Travel Website Built with the Latest Technologies and Responsive on All Screen Sizes.",
+      "Modern front-end travel website built with the latest technologies and responsive on all screen sizes.",
     tags: ["React", "Next.js", "JavaScript", "Tailwind", "TypeScript"],
     imageUrl: corpcommentImg,
   },
   {
     title: "Car ShowCase",
     description:
-      "Car Rental Website with Realistic Images Made by AI through External API Integration and Advanced Filtering.",
+      "Car rental website with realistic images made by AI through external API integration and advanced filtering.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "API's"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Personal Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A personal portfolio website, made by resend API, custom navigation bar and React libraries.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
