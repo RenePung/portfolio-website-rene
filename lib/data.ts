@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Full-Stack Developing",
     location: "MongoDB, PHP, Appwrite and more",
     description:
-      "Currently in a process of becoming a full stack developer, where i will be confident enought to build full stack projects on my own.",
+      "Currently in the process of becoming a full stack developer, where i will be confident enought to build full stack projects on my own.",
     icon: React.createElement(SiMongodb),
     date: "November-2023 till now...",
   },
@@ -100,7 +100,7 @@ export const skillsData = [
   "MongoDB",
   "Shadcn",
   "Bootstrap",
-  "vue.js",
+  "Vue.js",
   "Three.js",
   "App router",
   "Python",
